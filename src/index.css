@@ -1,0 +1,26 @@
+*{
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  transition: all 1s;
+}
+
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1{
+  padding: 20px;
+  animation: move 1s linear infinite;
+}
+
+@keyframes move{
+  0%{border-top: 5px solid black;}
+  25%{border-top: none; border-right: 5px solid orangered;}
+  50%{border-right: none; border-bottom: 5px solid black;}
+  75%{border-bottom: none; border-left: 5px solid orangered;}
+  100%{border-left: none; border-top: 5px solid black;}
+}
